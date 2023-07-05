@@ -21,8 +21,8 @@ jobs:
 
       - name: Semantic versioning
         id: versioning
-        uses: PaulHatch/semantic-version@v4.0.2
-        #uses: octo-org/octo-repo-go
+        #uses: PaulHatch/semantic-version@v4.0.2
+        uses: octo-org/octo-repo-go@v0.0.0
         with:
           branch: main
           tag_prefix: "v"
