@@ -10,10 +10,10 @@ def home():
     return PlainTextResponse('Hello world!')
 
 
-@router.get("/{name}", include_in_schema=False)
-def name():
+@router.get("/{fname}", include_in_schema=False)
+def fname():
     """Optional name endpoint."""
-    return PlainTextResponse(f'Hello {name}!')
+    return PlainTextResponse(f'Hello {fname}!')
 
 
 @router.get("/name/{specific_name}", include_in_schema=False)
